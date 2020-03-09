@@ -3,7 +3,7 @@ Copyright © 2020 Christian Chase Larcomb. christianlarcomb@gmail.com. All Right
 
 DEFINITIONS
 
-	g. Licensor means the individual(s) or entity(ies) granting rights under this Copyright License.
+	a. Licensor means the individual(s) or entity(ies) granting rights under this Copyright License.
 
 CONFIDENTIAL
 This document contains trade secrets or otherwise confidential information owned by the Licensor.
