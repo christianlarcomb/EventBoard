@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b0574f4-3ee3-435b-920e-bc148e32a6fe" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YdDXF4rMnxRqtbkCAKEdFqrNeZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/headers" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\chris\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\headers" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\python" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\twitterFeed" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\js" />
+      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b0574f4-3ee3-435b-920e-bc148e32a6fe" name="Default Changelist" comment="" />
+      <created>1583263614444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583263614444</updated>
+      <workItem from="1583263617872" duration="3967000" />
+      <workItem from="1583280238483" duration="1660000" />
+      <workItem from="1583282977871" duration="8539000" />
+      <workItem from="1583335075414" duration="35839000" />
+      <workItem from="1583419384079" duration="20000" />
+      <workItem from="1583419420533" duration="658000" />
+      <workItem from="1583423102786" duration="26706000" />
+      <workItem from="1583547508093" duration="4118000" />
+      <workItem from="1583623726518" duration="16471000" />
+      <workItem from="1583704087368" duration="666000" />
+      <workItem from="1583708459463" duration="9851000" />
+      <workItem from="1583727412491" duration="608000" />
+      <workItem from="1583779366099" duration="1314000" />
+      <workItem from="1583786571717" duration="68000" />
+      <workItem from="1583787621101" duration="215000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

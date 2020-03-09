@@ -1,0 +1,88 @@
+/*
+Copyright © 2020 Christian Chase Larcomb. christianlarcomb@gmail.com. All Rights Reserved
+
+DEFINITIONS
+
+	a. Licensor means the individual(s) or entity(ies) granting rights under this Copyright License.
+
+CONFIDENTIAL
+This document contains trade secrets or otherwise confidential information owned by the Licensor.
+Access to and use of this information is strictly limited and controlled by the Licensor.
+This document may not be copied, distributed, or otherwise disclosed outside of the Licensor's
+facilities except under appropriate precautions to maintain the confidentiality hereof,
+and may not be used in any way not expressly authorized by the Licensor.
+ */
+
+body {
+  background-color: #f1f1f1;
+  font-family: "HelveticaNeue";
+}
+
+.app-division
+{
+  height: calc(100vh - 20px);
+  width: auto;
+  display: flex;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+}
+
+.app-center-container
+{
+  height: 100%;
+  min-width: 430px;
+  width: 100%;
+  margin: 0;
+}
+
+.app-center-wrapper
+{
+  width: inherit;
+  height: inherit;
+  display: grid;
+  grid-template-rows: 35% 35% 30%;
+}
+
+.app-progress
+{
+  width: 400px;
+  background-color: lightgray;
+  float: right;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.content-divider-container
+{
+  height: 100%;
+  width: 50px;
+  float: left;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.content-divider
+{
+  background-color: white;
+  height: 80%;
+  width: 6px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dialogue-container{
+  height: calc(100% - 80px);
+  width: 100%;
+}
+
+.dialogue-wrapper
+{
+  width: 95%;
+  margin: 10px;
+  max-width: 500px;
+  height: calc(100% - 20px);
+  background-color: white;
+  border-radius: 10px;
+}

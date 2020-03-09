@@ -1,0 +1,198 @@
+/*
+Copyright © 2020 Christian Chase Larcomb. christianlarcomb@gmail.com. All Rights Reserved
+
+DEFINITIONS
+
+	a. Licensor means the individual(s) or entity(ies) granting rights under this Copyright License.
+
+CONFIDENTIAL
+This document contains trade secrets or otherwise confidential information owned by the Licensor.
+Access to and use of this information is strictly limited and controlled by the Licensor.
+This document may not be copied, distributed, or otherwise disclosed outside of the Licensor's
+facilities except under appropriate precautions to maintain the confidentiality hereof,
+and may not be used in any way not expressly authorized by the Licensor.
+ */
+
+.app-feed
+{
+  width: 410px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.feed-title.container
+{
+  height: 80px;
+  width: 100%;
+}
+
+.feed-title.grid
+{
+  height: 100%;
+  display: grid;
+}
+
+.logo-grid-top
+{
+  grid-template-columns: 20% 80%;
+}
+
+.text-grid-top
+{
+  padding-left: 20px;
+}
+
+.feed-content
+{
+  height: calc(100% - 80px);
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.feed-post.container
+{
+  height: 250px;
+  width: 100%;
+  display: flex;
+}
+
+.feed-post.wrapper
+{
+  width: 95%;
+  height: 92%;
+  background-color: white;
+  margin: auto;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 30% 45% 25%;
+  overflow: hidden;
+}
+
+.feed-grid-col
+{
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+}
+
+.feed-grid-col.one
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.feed-grid-col.two
+{
+  margin-right: auto;
+}
+
+.feed-title.text {
+
+}
+
+.vector-wrapper
+{
+  height: 70px;
+  width: 70px;
+}
+
+.feed-text
+{
+  font-size: 45px;
+  margin: 0;
+  color: #3b3b3b;
+  padding-bottom: 5px;
+}
+
+.f-post.top
+{
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 16% 84%;
+}
+
+.f-post.usr-pic
+{
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.f-post.usr-tags
+{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-left: 8px;
+}
+
+.usr-pic.wrapper
+{
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+
+.usr-txt-top
+{
+  margin-top: auto;
+}
+
+.usr-txt-top span
+{
+  -moz-osx-font-smoothing: auto;
+  font-size: 16px;
+  color: grey;
+}
+
+.usr-txt-bot
+{
+  margin-bottom: auto;
+}
+
+.usr-txt-bot span
+{
+  -moz-osx-font-smoothing: auto;
+  font-size: 15px;
+  color: lightgray;
+}
+
+.f-post.content
+{
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.f-post.content span
+{
+  color: #909090;
+}
+
+.f-post.mid
+{
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+}
+
+.f-post.bot
+{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.twit-logo-sml {
+  width: 42px;
+  height: 42px;
+}
+
+.twit-logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
