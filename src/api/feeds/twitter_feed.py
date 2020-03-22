@@ -1,5 +1,5 @@
 """
-Copyright (c) 2020 Christian C. Larcomb
+Copyright (c) 2020 Christian C. Larcomb, Jonathan T. Ingram
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,8 +48,8 @@ class TwitterStreamer:                                                # Class fo
         listener = StdOutListener()
         auth = OAuthHandler('pPIMfguuHex6yVrkXvveQkT0x',
                             'OlZc7W4vbuwbjgd7lmlTgz0JgIUrLz2Ta48oBaJ6K9ntdU65He')
-        auth.set_access_token('1234935237085401090-2slmPI6QKn3x6WPQK9GSYpTjKDvVgo',
-                              'vFcg5GTtNj3JZxtAuEbjQ8FuuA3wXG5a13mFs3qu8rmUG')
+        auth.set_access_token('1234935237085401090-pDDIe1DlqYsqBb6bAgE2MJrBhy9VU7',
+                              'yD5jRnebIzfaggcD46cW6dA188STp2XPFSMxC0FAo7kA7')
         stream = Stream(auth, listener)
         stream.filter(track=hash_tag_list)
 
@@ -79,7 +79,7 @@ class StdOutListener(StreamListener):
 
 if __name__ == '__main__':
     # Authenticate using config.py and connect to Twitter Streaming API.
-    hash_tag_list = ["RCBCsteam"]
+    hash_tag_list = ["covid", "CoronaCrisis"]
 
     twitter_streamer = TwitterStreamer()
     twitter_streamer.stream_tweets(hash_tag_list)

@@ -26,6 +26,7 @@ import '../../stylesheets/AppFeed.css';
 import '../../stylesheets/fonts.css'
 import FeedContent from "./feed-content.component";
 import ContentHeader from "../headers/content-header";
+import socketIOClient from "socket.io-client";
 
 class AppFeed extends React.Component {
 
@@ -35,59 +36,26 @@ class AppFeed extends React.Component {
 
         this.state = {
             tweets: [
-                {
-                    display: "Ricky Appleseed",
-                    picURL: "https://...",
-                    username:"@RickyAppleseed",
-                    content: "I'm at the #RCBCsteam event and loving it!"
-                },
-                {
-                    display: "Mick Appleseed",
-                    picURL: "https://...",
-                    username:"@MickAppleseed",
-                    content: "Wow! Everyone is incredibly nice here at the #RCBCsteam event!!"
-                },
-                {
-                    display: "Jule Appleseed",
-                    picURL: "https://...",
-                    username:"@JuleAppleseed",
-                    content: "#RCBCsteam lets go class 2055!"
-                },
-                {
-                    display: "Jacky Appleseed",
-                    picURL: "https://...",
-                    username:"@JackyAppleseed",
-                    content: "Hey, #RCBCsteam! I helped make you!"
-                }
+
             ]
         };
     }
-
-    sendAPIMessage = () => {
-
-        try {
-
-            this.props.webSocket.send('This is firing backend!')
-
-        } catch (e) {
-            // do nothing
-        }
-
-    };
 
     render(){
         return (
 
             <div className="app-feed">
 
-                <ContentHeader logoEnabled={true} hdrTitle="Feed" onClick={this.sendAPIMessage}/>
+                <ContentHeader logoEnabled={true} hdrTitle="Feed"/>
 
                 <div className="feed-content">
 
                     {
-                        this.state.tweets.map(obj => (
-                            <FeedContent objData={obj}/>
-                        ))
+                        this.props.tweetData.map(tweet => {
+                            return (
+                                <FeedContent tweet={tweet}/>
+                            )
+                        })
                     }
 
                 </div>

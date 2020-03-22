@@ -42,7 +42,7 @@ class FeedContent extends React.Component {
 
                             <div className="usr-pic wrapper">
                                 <a href='/'>
-
+                                    <img className="twitter-prof-img" alt="Twitter Profile Imag" src={this.props.tweet ? this.props.tweet.user.profile_image_url : 'https://iicpartners.com/static/img/defaults/user-default-image.png'}/>
                                 </a>
                             </div>
 
@@ -52,13 +52,17 @@ class FeedContent extends React.Component {
 
                             <div className="usr-txt-top">
                                 <span>
-                                    {this.props.objData.display}
+                                    {
+                                        this.props.tweet ? this.props.tweet.user.name : 'null'
+                                    }
                                 </span>
                             </div>
 
                             <div className="usr-txt-bot">
                                 <span>
-                                    {this.props.objData.username}
+                                    {
+                                        this.props.tweet ? '@'+this.props.tweet.user.screen_name : 'null'
+                                    }
                                 </span>
                             </div>
 
@@ -70,7 +74,9 @@ class FeedContent extends React.Component {
 
                         <div className="f-post content">
                             <span>
-                                {this.props.objData.content}
+                                {
+                                    this.props.tweet ? this.props.tweet.text : 'null'
+                                }
                             </span>
                         </div>
 
