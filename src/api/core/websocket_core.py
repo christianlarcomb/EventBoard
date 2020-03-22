@@ -23,41 +23,35 @@ SOFTWARE.
 
 import asyncio
 import websockets
-
+import random
 
 class WebSocketEngine:
 
     def __init__(self):
-        self.CONNECTION_FLAGS = ["[REG: FE]",
-                                 "[REG: TS]",
-                                 "[TS: INC]",
-                                 "[TS: OUT]"
-                                 "[FE: INC]",
-                                 "[FE: OUT]"]
-        self.open_sockets = [None]
+        self.CONNECTION_FLAGS = ["[REG: FE]", "[REG: TS]", "[TS: INC]", "[TS: OUT]", "[FE: INC]", "[FE: OUT]"]
+        self.connected = set()
 
+    # set responsible for connections
     async def msg_mngr(self, websocket, path):                              # Responsible for processing incoming and outgoing messages
 
         msg = await websocket.recv()                                        # Message from front-end saying connection is established
-        print("Incoming Message: " + msg)                                   # Debugging incoming messages
-
-        print("MESSAGE SPLIT: " + msg[:9])                                  # verifying the split
 
         if msg[:9] == self.CONNECTION_FLAGS[0]:                             # FRONT-END flag check.
             print("Front-End Registered with Flag: " + msg)                 # Output message received from front-end to console
-            self.open_sockets = [websocket]
+            self.connected.add(websocket)
 
         elif msg[:9] == self.CONNECTION_FLAGS[2]:                           # INCOMING-TWEET flag check. ([TS_INC])
-            if not self.open_sockets[0]:
-                print("Incoming Tweet Object: " + msg)                      # Output message received from front-end to console
-                await self.open_sockets[0].send("")
-            else:
-                print("ERROR: Front-End WebSocket unavailable.")
+            self.connected.add(websocket)
+            try:
+                await asyncio.wait([ws.send("hello") for ws in self.connected])
+                await asyncio.sleep(10)
+            finally:
+                self.connected.remove(websocket)
 
     def launch_engine(self):
-        start_server = websockets.serve(self.msg_mngr, "localhost", 8080)   # Creates server instance object
-        asyncio.get_event_loop().run_until_complete(start_server)           # Specifying to run it until complete
-        asyncio.get_event_loop().run_forever()                              # Infinite Loop
+        start_server = websockets.serve(self.msg_mngr, host="0.0.0.0", port=8080)   # Creates server instance object
+        asyncio.get_event_loop().run_until_complete(start_server)                   # Specifying to run it until complete
+        asyncio.get_event_loop().run_forever()                                      # Infinite Loop
 
 
 if __name__ == '__main__':                                                  # Core asynchronous call

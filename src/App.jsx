@@ -23,123 +23,47 @@ SOFTWARE.
 
 import React from 'react';
 import './stylesheets/App.css';
-import AppFeed from "./components/twitterFeed/app-feed.component";
-import ContentHeader from "./components/headers/content-header";
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import Begin from './components/primary/Login.component'
+import EventBoard from './components/primary/EventBoard.component'
+
+import socketIOClient from "socket.io-client";
 
 
 class App extends React.Component {
 
-    constructor(props)
-    {
-
+    constructor(props){
         super(props);
-
-        this.CONNECTION_FLAG = "[REG: FE]";
 
         this.state =
             {
-                twitterFeed:
-                [
-
-                ],
-
-                twitterLeaderboard:
-                [
-
-                ],
-
-                twitterSum: 3
+                response: false,
+                endpoint: 'http://127.0.0.1:8080'
             };
-
-    }
-
-    componentWillMount()
-    {
-
-        let url = 'ws://localhost:8080/';
-
-        try
-        {
-            this.webSocket = new WebSocket(url);
-        } catch (e) {
-            console.debug("ERROR")
-        }
-
     }
 
     componentDidMount()
     {
 
-        this.webSocket.onopen = e =>
-        {
-            console.log("Incoming Message: " + e.data);
-            this.webSocket.send(this.CONNECTION_FLAG)   // Sending Front-end Register Token
-        };
+        const { endpoint } = this.state;
+        const socket = socketIOClient(endpoint);
+        socket.on("Linked", data => {
+            console.log("Data received: ", data)
+        })
 
-        this.webSocket.onmessage = e =>
-        {
-            console.log("Object Received: " + e.data);
-        }
-    }//
+    }
 
     render(){
+
         return (
+            <Router>
+                <Route path="/" exact component={Begin}/>
+                <Route path="/event" exact component={EventBoard}/>
+            </Router>
+        )
 
-                <div className="app-division">
-
-                    <AppFeed webSocket={this.webSocket} />
-
-                    <div className="content-divider-container">
-
-                        <div className="content-divider"/>
-
-                    </div>
-
-                    <div className="app-center-container">
-
-                        <div className="app-center-wrapper">
-
-                            <div className="dialogue-one">
-
-                                <ContentHeader logoEnabled={false} hdrTitle="Event Sponsor"/>
-
-                                <div className="dialogue-container">
-
-                                    <div className="dialogue-wrapper">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div className="dialogue-two">
-
-                                <ContentHeader logoEnabled={false} hdrTitle="Leaderboard"/>
-
-                                <div className="dialogue-container">
-
-                                    <div className="dialogue-wrapper">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div className="dialogue-thr">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="app-progress">
-
-                    </div>
-
-                </div>
-
-        );
     }
 
 }
