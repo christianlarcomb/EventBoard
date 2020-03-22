@@ -37,17 +37,9 @@ class EventBoard extends React.Component {
 
         this.state =
             {
-                twitterFeed:
-                    [
 
-                    ],
+                twitterSum: 3,
 
-                twitterLeaderboard:
-                    [
-
-                    ],
-
-                twitterSum: 3
             };
 
     }
@@ -58,7 +50,7 @@ class EventBoard extends React.Component {
 
             <div className="app-division">
 
-                <AppFeed webSocket={this.webSocket} />
+                <AppFeed tweetData={this.props.tweetData} />
 
                 <div className="content-divider-container">
 

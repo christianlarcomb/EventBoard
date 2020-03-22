@@ -143,6 +143,7 @@ SOFTWARE.
   margin-left: auto;
   border-radius: 100%;
   background-color: lightgray;
+  overflow: hidden;
 }
 
 .usr-txt-top
@@ -171,7 +172,7 @@ SOFTWARE.
 
 .f-post.content
 {
-  font-size: 22px;
+  font-size: 17px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -195,12 +196,17 @@ SOFTWARE.
 }
 
 .twit-logo-sml {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
 }
 
 .twit-logo-container {
   display: flex;
   align-items: center;
   margin-left: 10px;
+}
+
+.twitter-prof-img {
+  height: 45px;
+  width: 45px;
 }

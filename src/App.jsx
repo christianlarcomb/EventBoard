@@ -40,7 +40,12 @@ class App extends React.Component {
         this.state =
             {
                 response: false,
-                endpoint: 'http://127.0.0.1:8080'
+                endpoint: 'http://127.0.0.1:8080',
+
+                tweets: [
+
+                ]
+
             };
     }
 
@@ -49,8 +54,46 @@ class App extends React.Component {
 
         const { endpoint } = this.state;
         const socket = socketIOClient(endpoint);
+
         socket.on("Linked", data => {
             console.log("Data received: ", data)
+        })
+
+        socket.on("tweet", data => {
+
+            try {
+                this.text = data.text;
+                this.name = data.user.name;
+                this.screen_name = data.user.screen_name;
+                this.verified = data.user.verified;
+                this.profile_image_url = data.user.profile_image_url;
+            } catch (e) {
+                console.log('data missing')
+            }
+
+
+            this.setState(state => {
+                return {
+                    tweets: [
+                        {
+                            text: this.text,
+                            user:
+                                {
+                                    name: this.name,
+                                    screen_name: this.screen_name,
+                                    verified: this.verified,
+                                    profile_image_url: this.profile_image_url
+                                }
+                        },
+                        state.tweets[0],
+                        state.tweets[1],
+                        state.tweets[2],
+                        state.tweets[3]
+                    ]}
+            })
+
+            //console.log(this.state.tweets)
+
         })
 
     }
@@ -60,7 +103,9 @@ class App extends React.Component {
         return (
             <Router>
                 <Route path="/" exact component={Begin}/>
-                <Route path="/event" exact component={EventBoard}/>
+                <Route path="/event"
+                    render = {routeProps => (<EventBoard {...routeProps} tweetData={this.state.tweets}/>)}
+                />
             </Router>
         )
 
