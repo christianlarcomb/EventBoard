@@ -1,1 +1,1 @@
-![alt text](github ad.jpg)
+![alt text](github ad.png)
