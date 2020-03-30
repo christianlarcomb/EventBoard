@@ -43,7 +43,7 @@ io.on("connection", socket => {
 });
 
 
-// STREAMS THE TWEETS?!
+// Effectively Streams the Twitter API
 twit.stream('statuses/filter', { track: 'covid' }, function(stream)
 {
     stream.on('data', data => {
