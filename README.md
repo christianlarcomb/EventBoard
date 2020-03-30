@@ -2,6 +2,7 @@
 ![Dependency Status](https://img.shields.io/david/christianlarcomb/EventBoard)
 ![Delbatrouse Group Discord](https://img.shields.io/discord/676642070458269707)
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/christianlarcomb/EventBoard)
+![Commit Activity](https://img.shields.io/github/languages/top/christianlarcomb/EventBoard)
 
 ### Details
 ![github repo ad pt 1](https://i.imgur.com/lKqTshJ.png)
