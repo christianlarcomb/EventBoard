@@ -1,5 +1,6 @@
-![repo size](https://img.shields.io/github/repo-size/christianlarcomb/EventBoard)
-![repo size](https://img.shields.io/david/christianlarcomb/EventBoard)
+![Repo Size](https://img.shields.io/github/repo-size/christianlarcomb/EventBoard)
+![Mhm](https://img.shields.io/david/christianlarcomb/EventBoard)
+![Delbatrouse Group Discord](https://img.shields.io/discord/676642070458269707)
 
 ### Details
 ![github repo ad pt 1](https://i.imgur.com/lKqTshJ.png)
