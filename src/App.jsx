@@ -26,7 +26,7 @@ import './stylesheets/App.css';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Begin from './components/primary/Login.component'
+import Begin from './components/primary/Selection.component'
 import EventBoard from './components/primary/EventBoard.component'
 
 import socketIOClient from "socket.io-client";
@@ -42,9 +42,7 @@ class App extends React.Component {
                 response: false,
                 endpoint: 'http://127.0.0.1:8080',
 
-                tweets: [
-
-                ]
+                tweets: []
 
             };
     }
@@ -92,7 +90,6 @@ class App extends React.Component {
                     ]}
             })
 
-            //console.log(this.state.tweets)
 
         })
 

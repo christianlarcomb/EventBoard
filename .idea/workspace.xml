@@ -24,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stylesheets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,6 +47,7 @@
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\primary" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\headers" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components" />
@@ -98,7 +99,17 @@
       <workItem from="1584894099232" duration="12468000" />
       <workItem from="1584923868043" duration="212000" />
       <workItem from="1584938409737" duration="104000" />
-      <workItem from="1585179605846" duration="213000" />
+      <workItem from="1585179605846" duration="735000" />
+      <workItem from="1585256553307" duration="6397000" />
+      <workItem from="1585329729556" duration="1297000" />
+      <workItem from="1585359607491" duration="94000" />
+      <workItem from="1585434688859" duration="1311000" />
+      <workItem from="1585538959085" duration="1138000" />
+      <workItem from="1585866467944" duration="6995000" />
+      <workItem from="1585881115433" duration="6549000" />
+      <workItem from="1586376828062" duration="268000" />
+      <workItem from="1586404135735" duration="100000" />
+      <workItem from="1586408940439" duration="5859000" />
     </task>
     <servers />
   </component>
