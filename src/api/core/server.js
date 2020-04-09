@@ -40,17 +40,21 @@ io.on("connection", socket => {
         io.sockets.emit('new message', {msg: data})
     });
 
-});
+    socket.on('stream_tweets', data => {
 
+        // Starting twitter stream with specified data...
+        twit.stream('statuses/filter', { track: data }, stream =>
+        {
+            // Streaming the data to the specific websocket which requested the stream...
+            stream.on('data', data => {
+                if(data.text && data.user.name && data.user.screen_name && data.user.profile_image_url){
+                    io.sockets.emit('tweet', data);
+                    console.log(data)
+                }
+            });
 
-// Effectively Streams the Twitter API
-twit.stream('statuses/filter', { track: 'covid' }, function(stream)
-{
-    stream.on('data', data => {
-        if(data.text && data.user.name && data.user.screen_name && data.user.profile_image_url){
-            io.sockets.emit('tweet', data);
-            console.log(data)
-        }
-    });
+        });
+
+    })
 
 });

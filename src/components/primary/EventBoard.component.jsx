@@ -33,8 +33,6 @@ class EventBoard extends React.Component {
 
         super(props);
 
-        this.CONNECTION_FLAG = "[REG: FE]";
-
         this.state =
             {
 
@@ -51,13 +49,6 @@ class EventBoard extends React.Component {
             <div className="app-division">
 
                 <AppFeed tweetData={this.props.tweetData} />
-
-                <div className="content-divider-container">
-
-                    <div className="content-divider"/>
-
-
-                </div>
 
                 <div className="app-center-container">
 

@@ -1,0 +1,229 @@
+/*
+Copyright (c) 2020 Christian C. Larcomb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, and distribute copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+Under no circumstances shall the Software be sublicensed, sold, and/or used for commerical purposes.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+
+
+/* Two Column Grids */
+
+.grid-col-2-98
+{
+  display: grid;
+  grid-template-columns: 2% 98%;
+}
+
+.grid-col-10-90
+{
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.grid-col-20-80
+{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.grid-col-30-70
+{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid-col-40-60
+{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.grid-col-50-50
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-col-60-40
+{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.grid-col-65-35
+{
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.grid-col-70-30
+{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.grid-col-80-20
+{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.grid-col-90-10
+{
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+/* Two Row Grids */
+
+.grid-row-10-90
+{
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.grid-row-20-80
+{
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.grid-row-30-70
+{
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.grid-row-40-60
+{
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+.grid-row-50-50
+{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.grid-row-60-40
+{
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+.grid-row-70-30
+{
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+
+.grid-row-80-20
+{
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.grid-row-90-10
+{
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
+/* Text Positioning */
+.content-float
+{
+  display: flex;
+  align-items: center;
+}
+
+/* Text Size */
+
+.txt-1px  { font-size: 1px; }
+.txt-2px  { font-size: 2px; }
+.txt-3px  { font-size: 3px; }
+.txt-4px  { font-size: 4px; }
+.txt-5px  { font-size: 5px; }
+.txt-6px  { font-size: 6px; }
+.txt-7px  { font-size: 7px; }
+.txt-8px  { font-size: 8px; }
+.txt-9px  { font-size: 9px; }
+.txt-10px { font-size: 10px; }
+.txt-11px { font-size: 11px; }
+.txt-12px { font-size: 12px; }
+.txt-13px { font-size: 13px; }
+.txt-14px { font-size: 14px; }
+.txt-15px { font-size: 15px; }
+.txt-16px { font-size: 16px; }
+.txt-17px { font-size: 17px; }
+.txt-18px { font-size: 18px; }
+.txt-19px { font-size: 19px; }
+.txt-20px { font-size: 20px; }
+.txt-21px { font-size: 21px; }
+.txt-22px { font-size: 22px; }
+.txt-23px { font-size: 23px; }
+.txt-24px { font-size: 24px; }
+.txt-25px { font-size: 25px; }
+.txt-26px { font-size: 26px; }
+.txt-27px { font-size: 27px; }
+.txt-28px { font-size: 28px; }
+.txt-29px { font-size: 29px; }
+.txt-30px { font-size: 30px; }
+.txt-31px { font-size: 31px; }
+.txt-32px { font-size: 32px; }
+.txt-33px { font-size: 33px; }
+.txt-34px { font-size: 34px; }
+.txt-35px { font-size: 35px; }
+.txt-36px { font-size: 36px; }
+.txt-37px { font-size: 37px; }
+.txt-38px { font-size: 38px; }
+.txt-39px { font-size: 39px; }
+.txt-40px { font-size: 40px; }
+.txt-41px { font-size: 41px; }
+.txt-42px { font-size: 42px; }
+.txt-43px { font-size: 43px; }
+.txt-44px { font-size: 44px; }
+.txt-45px { font-size: 45px; }
+.txt-46px { font-size: 46px; }
+.txt-47px { font-size: 47px; }
+.txt-48px { font-size: 48px; }
+.txt-49px { font-size: 49px; }
+.txt-50px { font-size: 50px; }
+
+
+/* Text Colors */
+
+.txt-clr-white { color: white; }
+.txt-clr-blk   { color: black; }
+
+.txt-clr-grey-1 { color: #f1f1f1; }
+.txt-clr-grey-2 { color: #d3d3d3; }
+.txt-clr-grey-3 { color: #959595; }
+.txt-clr-grey-4 { color: #3b3b3b; }
+
+.txt-clr-grn-active { color: #65d68d; }
+.txt-clr-red-main   { color: #b62b36; }
+
+/* Text Features */
+.txt-bld { font-weight: bold; }
+
+/* Background Colors */
+.bknrd-red  { background-color: red; }
+.bknrd-blue { background-color: blue; }
+.bknrd-blk { background-color: black; }
