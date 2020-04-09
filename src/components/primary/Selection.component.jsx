@@ -80,6 +80,8 @@ class Login extends React.Component {
                             </div>
                         </div>
 
+                        { /* am i alive? */}
+
                         <div className="menu-bottom">
 
                             {
