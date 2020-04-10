@@ -63,6 +63,7 @@ class Login extends React.Component {
 
             <div className="app-split-container">
 
+                {/* App Split 1 */}
                 <div className="app-split one">
 
                     <div className="menu-container">
@@ -99,8 +100,12 @@ class Login extends React.Component {
 
                                                 <div className="menu-button-sel grid-row-65-35">
 
-                                                    <span className="menu-button-sel-title txt-32px txt-bld">{data.title}</span>
-                                                    <span className="menu-button-sel-desc txt-12px txt-bld">{data.description}</span>
+                                                    <span className="menu-button-sel-title txt-32px txt-bld">
+                                                        {data.title}
+                                                    </span>
+                                                    <span className="menu-button-sel-desc txt-12px txt-bld">
+                                                        {data.description}
+                                                    </span>
 
                                                 </div>
 
@@ -118,22 +123,59 @@ class Login extends React.Component {
 
                 </div>
 
-
+                {/* App Split 2 */}
                 <div className="app-split two">
-
                     <div className="config-slot-grid">
 
                         <br/>
+
                         <div className="config-slot-container">
 
+                            <div className="config-slot-wrapper">
+
+                                <div className="config-simulator-grid">
+
+                                    <div className="config-simulator-obj col-one">
+
+                                    </div>
+
+                                    <div className="config-simulator-obj col-two">
+
+                                        <div className="config-simulator-obj two">
+
+                                        </div>
+                                        <div className="config-simulator-obj three">
+
+                                        </div>
+                                        <div className="config-simulator-obj four">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="config-simulator-obj col-three">
+
+                                        <div className="config-simulator-obj five">
+
+                                        </div>
+                                        <div className="config-simulator-obj six">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         <br/>
 
                     </div>
-
                 </div>
 
-
+                {/* App Split 3 */}
                 <div className="app-split three">
 
                     <div className="sel-menu-container">

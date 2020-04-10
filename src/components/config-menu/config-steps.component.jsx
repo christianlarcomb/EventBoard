@@ -10,7 +10,7 @@ class ConfigurationMenu extends React.Component
 
         this.state =
             {
-                step_one_completed: true
+                step_one_completed: false
             }
 
     }
