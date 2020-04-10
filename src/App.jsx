@@ -22,12 +22,12 @@ SOFTWARE.
  */
 
 import React from 'react';
-import './stylesheets/App.css';
+import './stylesheets/main/App.css';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Begin from './components/primary/Selection.component'
-import EventBoard from './components/primary/EventBoard.component'
+import Begin from './components/config-menu/config-menu.component'
+import EventBoard from './components/stream-display/primary/EventBoard.component'
 
 import socketIOClient from "socket.io-client";
 

@@ -23,7 +23,7 @@ SOFTWARE.
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './stylesheets/index.css';
+import './stylesheets/main/index.css';
 import App from './App';
 import './fonts/HelveticaNeue-Medium-11.ttf'
 
