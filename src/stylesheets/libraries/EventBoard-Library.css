@@ -254,3 +254,29 @@ SOFTWARE.
 .bknrd-red  { background-color: red; }
 .bknrd-blue { background-color: blue; }
 .bknrd-blk { background-color: black; }
+
+
+/****** Element Statuses ******/
+.view-enabled
+{
+  opacity: 0;
+  transition: opacity 1s;
+  display: block;
+  transition-timing-function: ease-in-out;
+}
+
+.view-enabled-anim
+{
+  opacity: 1;
+  transition: opacity 0.5s;
+  display: block;
+  transition-timing-function: ease-in-out;
+}
+
+.view-disabled
+{
+  opacity: 0;
+  transition: opacity 10s;
+  display: none;
+  transition-timing-function: ease-in-out;
+}
