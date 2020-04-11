@@ -24,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stylesheets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stylesheets/config-menu" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -40,18 +40,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\python" />
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\twitterFeed" />
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src" />
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\js" />
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\components\misc" />
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\components\stream-display" />
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\components\config-menu" />
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets\misc" />
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets\main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets\config-menu" />
       <recent name="E:\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\primary" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components\headers" />
       <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\components" />
-      <recent name="C:\Users\chris\Dropbox\Code Playground\FullStack Web [WebStorm]\event-board\src\stylesheets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +109,10 @@
       <workItem from="1585881115433" duration="6549000" />
       <workItem from="1586376828062" duration="268000" />
       <workItem from="1586404135735" duration="100000" />
-      <workItem from="1586408940439" duration="5859000" />
+      <workItem from="1586408940439" duration="7326000" />
+      <workItem from="1586466533928" duration="19675000" />
+      <workItem from="1586500068745" duration="13000" />
+      <workItem from="1586539124382" duration="13821000" />
     </task>
     <servers />
   </component>
