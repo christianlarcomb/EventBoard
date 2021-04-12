@@ -46,10 +46,10 @@ class TwitterStreamer:                                                # Class fo
     def stream_tweets(self, hash_tag_list):
         # This handles Twitter authetification and the connection to Twitter Streaming API
         listener = StdOutListener()
-        auth = OAuthHandler('pPIMfguuHex6yVrkXvveQkT0x',
-                            'OlZc7W4vbuwbjgd7lmlTgz0JgIUrLz2Ta48oBaJ6K9ntdU65He')
-        auth.set_access_token('1234935237085401090-pDDIe1DlqYsqBb6bAgE2MJrBhy9VU7',
-                              'yD5jRnebIzfaggcD46cW6dA188STp2XPFSMxC0FAo7kA7')
+        auth = OAuthHandler('[REDACTED]',
+                            '[REDACTED]')
+        auth.set_access_token('[REDACTED]',
+                              '[REDACTED]')
         stream = Stream(auth, listener)
         stream.filter(track=hash_tag_list)
 
