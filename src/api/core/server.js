@@ -8,10 +8,10 @@ const express = require("express"),
 server.listen(process.env.PORT || 8080);
 
 const twit = new twitter({
-    consumer_key: 'pPIMfguuHex6yVrkXvveQkT0x',
-    consumer_secret: 'OlZc7W4vbuwbjgd7lmlTgz0JgIUrLz2Ta48oBaJ6K9ntdU65He',
-    access_token_key: '1234935237085401090-pDDIe1DlqYsqBb6bAgE2MJrBhy9VU7',
-    access_token_secret: 'yD5jRnebIzfaggcD46cW6dA188STp2XPFSMxC0FAo7kA7'
+    consumer_key: '[REDACTED]',
+    consumer_secret: '[REDACTED]',
+    access_token_key: '[REDACTED]',
+    access_token_secret: '[REDACTED]'
 });
 
 let users = [];
